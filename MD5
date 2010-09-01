@@ -1,0 +1,17 @@
+bd416607c937e5f5e5383b6e444d3b8d *DESCRIPTION
+9fdfeb11f7ddba6f3aab9aaa6b1ac5dd *NAMESPACE
+871a97a4461c0058e6c2e75931945855 *R/R.test.R
+cff777357c6c79a42e2742073ce45f98 *R/classDS.r
+2b14e0718950e59d7ee1dc1b7efd3bca *R/classTAD.r
+0d6767218c953146ca986a5c8f188909 *R/mbd.r
+3a5d41e98a5b8c0c1dcbb50fd7d73d60 *R/scalecurve.R
+8d8d1381bc39f5fb152e204606f101b6 *R/tmean.r
+9b03ebe8a78df46210ab97039e9201c0 *data/prostate.rda
+c4c629878b18a03a1199e1250706c5b8 *man/MBD.Rd
+b09c31c9add5bc983a13bcd872f4cf92 *man/R.test.Rd
+b49c2c668df4ba80ee470bf6ad8200dc *man/classDS.Rd
+19365c1541e6536aefc5d8e187215a65 *man/classTAD.Rd
+dc3e9a704274820db16c9c534e797f27 *man/prost.x.Rd
+1ba8e359ccd4efde9f6f2baf1f951a45 *man/prost.y.Rd
+614c1a65ffcfc2520282aa789e67717c *man/scalecurve.Rd
+29a6bee50af55e2f613f378a542c52ec *man/tmean.Rd
