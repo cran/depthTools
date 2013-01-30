@@ -37,6 +37,8 @@ Lopez-Pintado, S. \emph{et al.} (2010). Robust depth-based tools for the analysi
 
   ## real data
   data(prostate)
+  prost.x<-prostate[,1:100]
+  prost.y<-prostate[,101]
   set.seed(1)
   learning <- sample(50,40,replace=FALSE) 
   yl <- prost.y[learning]   

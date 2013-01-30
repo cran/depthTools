@@ -1,6 +1,6 @@
 Package: depthTools
-Version: 0.1-0
-Date: 2010-09-01
+Version: 0.2
+Date: 2013-01-30
 Title: Depth Tools Package
 Author: Sara Lopez-Pintado <sl2929@columbia.edu> and Aurora Torrente
         <etorrent@est-econ.uc3m.es>.
@@ -18,6 +18,6 @@ Description: depthTools is a package that implements different
         computational cost, what renders it very appropriate for high
         dimensional data such as gene expression data.
 License: GPL (>= 2)
-Packaged: 2012-10-29 08:58:33 UTC; ripley
+Packaged: 2013-02-01 11:51:35 UTC; migueltardio
 Repository: CRAN
-Date/Publication: 2012-10-29 08:58:33
+Date/Publication: 2013-02-05 16:11:01

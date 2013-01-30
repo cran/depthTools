@@ -41,6 +41,8 @@ Lopez-Pintado, S. \emph{et al.} (2010). Robust depth-based tools for the analysi
 
   ## real data
   data(prostate)
+  prost.x<-prostate[,1:100]
+  prost.y<-prostate[,101]
   scalecurve(prost.x[prost.y==0,])  ## scale curve of normal samples
   scalecurve(prost.x[prost.y==1,])  ## scale curve of tumoral samples
   

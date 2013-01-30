@@ -39,6 +39,8 @@ Lopez-Pintado, S. \emph{et al.} (2010). Robust depth-based tools for the analysi
 
   ## real data
   data(prostate)
+  prost.x<-prostate[,1:100]
+  prost.y<-prostate[,101]
   normal<-prost.x[prost.y==0,]
   R.test(normal,normal,10,10)$p.value
 

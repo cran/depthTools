@@ -58,6 +58,8 @@ Lopez-Pintado, S. \emph{et al.} (2010). Robust depth-based tools for the analysi
  
   ## real data
   data(prostate)
+  prost.x<-prostate[,1:100]
+  prost.y<-prostate[,101]
   normal.depths<-MBD(prost.x[prost.y==0,],plotting=TRUE,
                      main="Normal samples")  
   tumor.depths<-MBD(prost.x[prost.y==1,],plotting=TRUE,
