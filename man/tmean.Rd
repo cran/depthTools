@@ -6,12 +6,16 @@
 }
 
 \usage{
-tmean(x,alpha=0.2)
+tmean(x,alpha=0.2,plotting=FALSE,new=TRUE,cols=c(1,4,8),...)
 }
 
 \arguments{
-  \item{x}{ an \code{nxp} data matrix containing the observations (samples) by rows and the variables (genes) by columns }
+  \item{x}{ an \code{nxd} data matrix containing the observations (samples) by rows and the variables (genes) by columns }
   \item{alpha}{ the proportion of observations that are trimmed out when computing the mean. 0.2 by default.}
+  \item{plotting}{ a logical value. If TRUE then a plot is built. If alpha has length 1, then the trimmed mean, the samples used for its computation and the discarded ones are plotted with different colors, according to the values of cols, below. If alpha has length greater than 1, then a plot with several trimmed means is constructed. The first element in cols is used to determine a color palette, from cols[1] (for the smallest value in alpha) to 'gray' (for the greatest value in alpha).}
+  \item{new}{ a logical value. If alpha has length 1 or plotting is FALSE, then it is ignored. If TRUE, a new plot is started; otherwise, the new trimmed means are added to the existing plot.}
+  \item{cols}{ a vector of length 3 containing, in the following ordering, the colors for depicting the trimmed mean, the trimmed collection of samples and the samples which are not taken into account in the computation of the trimmed mean.}
+  \item{...}{ graphical parameters (see 'par') and any further arguments of 'plot'.}
 }
 
 \value{
@@ -27,15 +31,11 @@ Aurora Torrente \email{etorrent@est-econ.uc3m.es}}
 
 
 \examples{
-  set.seed(0)
+  set.seed(50)
   x <- matrix(rnorm(100),10,10)
   m.x<-apply(x,2,mean)
-  t.x<-tmean(x)
-  matplot(t(x),type="l",col=1,lty=2,lwd=.8)
-  matlines(t(t.x$tm.x), type="l",col=4,lty=2)
-  lines(t.x$tm,lty=1,col=2,lwd=1.2)
-  legend("bottom",lty=c(2,2,1),col=c(1,4,2),legend=c("whole sample",
-         "trimmed sample","trimmed mean"))
+  t.x<-tmean(x,plotting=TRUE, lty=1)
 
+  t.x.seq <- tmean(x,alpha=c(0,0.25,0.5,0.75),plotting=TRUE, lty=1, cols=2)
 }
 \keyword{ multivariate }
