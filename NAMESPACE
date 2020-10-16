@@ -1,2 +1,7 @@
 # Export all names
 exportPattern(".")
+
+importFrom("grDevices", "colorRampPalette", "gray")
+importFrom("graphics", "legend", "lines", "matlines", "matplot", "par",
+           "polygon")
+importFrom("stats", "runif", "wilcox.test")
