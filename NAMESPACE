@@ -3,5 +3,5 @@ exportPattern(".")
 
 importFrom("grDevices", "colorRampPalette", "gray")
 importFrom("graphics", "legend", "lines", "matlines", "matplot", "par",
-           "polygon")
+           "polygon", "plot")
 importFrom("stats", "runif", "wilcox.test")

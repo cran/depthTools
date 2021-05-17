@@ -1,6 +1,6 @@
 Package: depthTools
-Version: 0.5
-Date: 2020-10-15
+Version: 0.6
+Date: 2021-05-15
 Title: Depth Tools Package
 Author: Sara Lopez-Pintado <sl2929@columbia.edu> and Aurora Torrente
         <etorrent@est-econ.uc3m.es>.
@@ -19,6 +19,6 @@ Description: Implementation of different statistical tools for the
         gene expression data.
 License: GPL (>= 2)
 NeedsCompilation: no
-Packaged: 2020-10-15 14:43:13 UTC; mtl
+Packaged: 2021-05-17 18:18:23 UTC; mtl
 Repository: CRAN
-Date/Publication: 2020-10-16 06:20:13 UTC
+Date/Publication: 2021-05-17 18:40:02 UTC
