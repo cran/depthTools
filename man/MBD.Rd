@@ -71,8 +71,8 @@ Lopez-Pintado, S. \emph{et al.} (2010). Robust depth-based tools for the analysi
 
   ## simulated data
   set.seed(0)
-  v <- matrix(c(2,1,0,3,-2,1,2,1,0,-2,rnorm(3)),3,5)
-  xR <- matrix(rnorm(100),10,5)
+  v <- matrix(c(2,1,0,3,-2,1,2,1,0,3,-2,1,rnorm(3)),3,5)
+  xR <- matrix(rnorm(100),20,5)
   depths<-MBD(v,xR,plotting=TRUE)
 
   # MBD of normal prostate samples with respect to tumoral ones
